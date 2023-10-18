@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Player Ratings</title>
+  </head>
+  <body>
+    <h1>Player Ratings</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Player</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for player, rating in players.items() %}
+        <tr>
+          <td>{{ player }}</td>
+          <td>{{ rating }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <h2>Record Result</h2>
+    <form action="{{ url_for('record_result') }}" method="post">
+      <label for="winner">Winner:</label>
+      <input type="text" name="winner" required>
+      <label for="loser">Loser:</label>
+      <input type="text" name="loser" required>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

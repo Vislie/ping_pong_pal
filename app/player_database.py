@@ -11,7 +11,7 @@ def create_table(conn):
                  name TEXT NOT NULL,
                  elo INTEGER NOT NULL);''')
     conn.commit()
-    conn.close()
+    #conn.close()
 
 
 def add_player(conn, name, elo):
