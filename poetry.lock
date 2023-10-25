@@ -227,6 +227,31 @@ dev = ["pre-commit", "tox"]
 testing = ["pytest", "pytest-benchmark"]
 
 [[package]]
+name = "pyscard"
+version = "2.0.7"
+description = "Smartcard module for Python."
+optional = false
+python-versions = "*"
+files = [
+    {file = "pyscard-2.0.7-cp310-cp310-win32.whl", hash = "sha256:06666a597e1293421fa90e0d4fc2418add447b10b7dc85f49b3cafc23480f046"},
+    {file = "pyscard-2.0.7-cp310-cp310-win_amd64.whl", hash = "sha256:a2266345bd387854298153264bff8b74f494581880a76e3e8679460c1b090fab"},
+    {file = "pyscard-2.0.7-cp311-cp311-win32.whl", hash = "sha256:beacdcdc3d1516e195f7a38ec3966c5d4df7390c8f036cb41f6fef72bc5cc646"},
+    {file = "pyscard-2.0.7-cp311-cp311-win_amd64.whl", hash = "sha256:8e37b697327e8dc4848c481428d1cbd10b7ae2ce037bc799e5b8bbd2fc3ab5ed"},
+    {file = "pyscard-2.0.7-cp37-cp37m-win32.whl", hash = "sha256:a0c5edbedafba62c68160884f878d9f53996d7219a3fc11b1cea6bab59c7f34a"},
+    {file = "pyscard-2.0.7-cp37-cp37m-win_amd64.whl", hash = "sha256:f704ad40dc40306e1c0981941789518ab16aa1f84443b1d52ec0264884092b3b"},
+    {file = "pyscard-2.0.7-cp38-cp38-win32.whl", hash = "sha256:59a466ab7ae20188dd197664b9ca1ea9524d115a5aa5b16b575a6b772cdcb73c"},
+    {file = "pyscard-2.0.7-cp38-cp38-win_amd64.whl", hash = "sha256:da70aa5b7be5868b88cdb6d4a419d2791b6165beeb90cd01d2748033302a0f43"},
+    {file = "pyscard-2.0.7-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:2d4bdc1f4e0e6c46e417ac1bc9d5990f7cfb24a080e890d453781405f7bd29dc"},
+    {file = "pyscard-2.0.7-cp39-cp39-win32.whl", hash = "sha256:39e030c47878b37ae08038a917959357be6468da52e8b144e84ffc659f50e6e2"},
+    {file = "pyscard-2.0.7-cp39-cp39-win_amd64.whl", hash = "sha256:5a5865675be294c8d91f22dc91e7d897c4138881e5295fb6b2cd821f7c0389d9"},
+    {file = "pyscard-2.0.7.tar.gz", hash = "sha256:278054525fa75fbe8b10460d87edcd03a70ad94d688b11345e4739987f85c1bf"},
+]
+
+[package.extras]
+gui = ["wxPython"]
+pyro = ["Pyro"]
+
+[[package]]
 name = "pytest"
 version = "7.4.3"
 description = "pytest: simple powerful testing with Python"
@@ -294,4 +319,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "2891b6aa205da2f3d9216751a8023d49e78550aafd8c33811807469972e69a31"
+content-hash = "3f270d4d6d189cfc561e71d0112d54c63072c3baf099c642fadeb5a182dcfb06"
