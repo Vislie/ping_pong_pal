@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pong"
+version = "0.1.0"
+description = "The packages needed for Ping Pong Pal"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pytest = "^7.4.3"
+flask = "^3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
