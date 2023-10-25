@@ -1,18 +1,7 @@
-import sys
 import pytest
-from pathlib import Path
 import sqlite3
 
-src_name = "app"
-
-this_file = Path(__file__)
-tests_folder = this_file.parent
-project_folder = tests_folder.parent
-code_folder = project_folder.joinpath(src_name)
-
-sys.path.insert(0, str(code_folder))
-
-from player_database import create_table, add_player, delete_player, get_players, get_elo, update_elo
+from app.player_database import add_player, delete_player, get_players, get_elo, update_elo
 
 
 @pytest.fixture

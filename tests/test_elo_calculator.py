@@ -1,17 +1,4 @@
-import sys
-import pytest
-from pathlib import Path
-
-src_name = "app"
-
-this_file = Path(__file__)
-tests_folder = this_file.parent
-project_folder = tests_folder.parent
-code_folder = project_folder.joinpath(src_name)
-
-sys.path.insert(0, str(code_folder))
-
-from elo_calculator import calculate_elo
+from app.elo_calculator import calculate_elo
 
 def test_calculate_elo():
     # Test case 1: Winner has higher elo than loser
